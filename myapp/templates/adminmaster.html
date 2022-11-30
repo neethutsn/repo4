@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/style1.css'%}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{%static 'javascript/script.js'%}"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="{%static 'images/logo1.png'%}" alt="">
+            </div>
+            <span class="logo_name">E-GARDENER</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Home</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Category</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">New products</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-folder"></i>
+                    <span class="link-name">Deal</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comment-share"></i>
+                    <span class="link-name">Reviews</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Order list</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-image-plus"></i>
+                    <span class="link-name">Add new</span>
+                </a></li>
+
+            </ul>
+            <ul class="logout">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="dashboard"> 
+    <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+
+        <div class="search-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="search here.">
+        </div>
+        <i class="uil uil-bell"></i>
+        <img src="{%static 'images/profile.png'%}" alt="">
+      </div>
+      
+      {% block content1 %} 
+      {% endblock %}
+
+
+      
+    </section>
+    
+</body>
+</html>
